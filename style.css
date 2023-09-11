@@ -9,16 +9,18 @@ body {
 }
 
 img {
-  border-radius: 2%;
+  border-radius: 2% 0 0 2%;
 }
 
 .product {
+  display: grid;
   background-color: #fff;
-  max-width: 35rem;
+  max-width: 36.5rem;
+  height: 27rem;
   margin: 200px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 15px;
   border-radius: 2%;
 }
 
@@ -49,7 +51,12 @@ img {
   font-size: 14px;
 }
 
+.prices {
+  display: flex;
+}
+
 .discounted-price {
+  padding: 10px 0 0 10px;
   font-family: "fraunces";
   font-weight: 700;
   font-size: 30px;
@@ -57,10 +64,37 @@ img {
 }
 
 .before-price {
+  align-self: center;
+  padding: 0 0 0 10px;
   font-family: "montserrat";
   font-weight: 500;
+  font-size: 13px;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
+}
+
+.btn {
+  justify-content: center;
+  width: 80%;
+  font-family: "montserrat";
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 7px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cart-icon {
+  position: relative;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: hsl(158, 36%, 18%);
 }
 
 .attribution {
